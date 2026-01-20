@@ -1,4 +1,4 @@
-🔹 Brute Force — Intuition (2 lines)
+🔹 Brute Force — Intuition 
 
 Idea:
 For every character, check the entire string to see if it appears anywhere else.
@@ -7,7 +7,7 @@ If a character appears only once, return its index.
 Time Complexity: O(n²)
 Space Complexity: O(1)
 
-🔹 Better Solution (Hashing) — Intuition (2 lines)
+🔹 Better Solution (Hashing) — Intuition 
 
 Idea:
 First count the frequency of each character using hashing.
@@ -16,13 +16,12 @@ Then scan the string again to find the first character with frequency 1.
 Time Complexity: O(n)
 Space Complexity: O(1) (26 characters)
 
-🔹 Optimal Solution (Array Frequency) — GitHub Ready
+🔹 Optimal Solution (Array Frequency)
 💡 Approach
 
 Use a fixed-size array of 26 to store character frequencies.
 Traverse the string twice to identify the first unique character.
 
-✅ C++ Code
 int firstUniqChar(string s) {
     int freq[26] = {0};
 
